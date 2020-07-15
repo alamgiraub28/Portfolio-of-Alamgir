@@ -1,0 +1,834 @@
+@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+body{
+    margin:0;
+    padding:0;
+    font-family:Arial, Helvetica, sans-serif;
+    }
+
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+.container{
+    width:1170px;
+    margin:0 auto;
+}
+   .row{
+       display:flex;
+       flex-wrap: wrap;
+   }
+
+
+   
+/*start Header*/
+   header{
+       left:0;
+       right:0;
+       background-color:rgb(34, 39, 41);
+       padding:10px 0;
+       z-index: 1000;
+       position: fixed;
+   }
+
+   header .row{
+    justify-content: space-between;
+    align-items: center;
+
+}
+   header .brand-name{
+    margin:0;
+    padding:0;
+   }
+
+   header .brand-name a{
+    text-decoration:none;
+    font-size:25px;
+    color:white;
+    }
+
+ .menu-bar a{
+      padding:0 15px;
+      text-decoration:none;
+      color:white;
+      font-size: 16px;
+      text-transform: uppercase;
+      font-weight:500;
+  }
+.menu-bar a:hover{
+    color:orange;
+}
+/*End Header*/
+/*start hero Area*/
+ .home{
+    min-height:100vh;
+    background-image: url('img/final-pic.jpg');
+    background-size:cover;
+    background-position:center;
+    position:relative;
+    overflow: hidden;
+    background-repeat: no-repeat;
+        
+}
+
+.home .row{
+min-height:100vh;
+}
+
+.home .home-content{
+    flex:0 0 100%;
+    max-width:100%;
+    display:flex;
+    flex-wrap: wrap;
+    align-items: center;
+    
+}
+.home .home-content .block{
+    flex:0 0 60%;
+    width:100%;
+    margin:0;
+    padding-left:25px;
+    border-left:3px solid orange;
+
+}
+
+.home .home-content .block h6{
+    font-size:18px;
+    color:white;
+    font-weight: 500;
+    padding:0;
+    margin:0;
+}
+
+.home .home-content .block h1{
+    font-size:70px;
+    color:white;
+    font-weight:600;
+    margin:0;
+    padding:0;
+    margin-top:20px;
+}
+
+.home .home-content .block h3{
+    font-size:25px;
+    color:white;
+    font-weight: 500;
+    padding:0;
+    margin:0;
+}
+
+.home .home-content .block .btn-know{
+    margin-top:20px;
+}
+
+.home .home-content .block .btn-know a{
+text-decoration:none;
+color:white;
+border-radius: 4px;
+border:1px solid white;
+padding:12px 25px;
+font-size:14px;
+font-weight: 600;
+display:inline-block;
+transition: all .5s ease;
+background-color:transparent;
+}
+
+.home .home-content .block .btn-know a:hover{
+background-color:#fff;
+color:#000;
+}
+/*End hero Area*/
+/*start about Section*/
+.about-me{
+    margin-top: 100px;
+    padding-top:50px;
+}
+
+.section-title{
+    flex:0 0 100%;
+    max-width:100%;
+
+}
+.section-title h1{
+    display:inline-block;
+    text-transform:uppercase;
+    font-size:35px;
+    font-weight:700;
+    color:#000000;
+    padding:0;
+    margin:0;
+    padding-bottom:5px;
+    position:relative;
+    padding-left:25px;
+}
+
+.section-title h1:before{
+    content:"";
+    left:25px;
+    height:2px;
+    width:59%;
+    background-color:orange;
+    bottom:0;
+    position: absolute;
+}
+
+.about-me .section-title p{
+    font-size:14px;
+    display:block;
+    color: #838383;
+    text-transform: uppercase;
+    padding-top:10px;
+    font-weight:500;
+    padding-left:25px;
+}
+
+.about-me .about-content{
+ margin-top:25px;
+ height:400px;
+}
+
+.about-me .about-content .img-about-me{
+    flex:0 0 33.33%;
+    max-width:33.33%;
+
+}
+.about-me .about-content .img-about-me img{
+    width:100%;
+    display:block;
+}
+
+.about-me .about-content .about-me-text{
+    flex:0 0 66.66%;
+    max-width:66.66%;
+    padding:25px;
+    
+}
+
+.about-me .about-content .about-me-text h4{
+font-size:25px;
+margin:0 0 5px;
+}
+
+.about-me .about-content .about-me-text h6{
+    font-size:18px;
+    margin:0 0 5px;
+    color:orange;
+    text-transform: uppercase;
+    letter-spacing: 3.5px;
+    }
+
+    .about-me .about-content .about-me-text p{
+        font-size:15px;
+        margin:0 0 5px;
+        font-weight:400;
+        line-height:24px;
+        color:#838383;
+        }
+
+        .about-me .about-content .about-me-text .info{
+            display:flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-top:20px;
+        }
+
+        .about-me .about-content .about-me-text .info .list{
+            flex:0 0 calc(50% - 15px);
+            max-width: 0 0 calc(50% - 15px);
+            margin-top:10px;
+            display:flex;
+            flex-wrap: wrap;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+            align-items: center;
+        }
+
+        .about-me .about-content .about-me-text .info .list label{
+            font-weight:600;
+            padding-right:10px;
+            font-size:15px;
+        }
+        .about-me .about-content .about-me-text .info .list p{
+         margin:0;
+        font-size: 15px;
+        font-weight:400;
+        }
+
+        .about-me .about-content .about-me-text .social-link{
+          margin-top:50px;
+          }
+
+        .about-me .about-content .about-me-text .social-link a{
+            background:orange;
+            text-align:center;
+            display:inline-block;
+            line-height:28px;
+            height:30px;
+            width:30px;
+            border-radius:4px;
+            border:1px solid black;
+            margin-right:6px;
+            
+        }
+
+        .about-me .about-content .about-me-text .social-link a .fa{
+            color:black;
+            
+        }
+
+        .about-me .about-content .about-me-text .social-link a:hover{
+            background:black;
+        }
+        .about-me .about-content .about-me-text .social-link a .fa:hover{
+            color:white;
+        }
+
+/*Start Service section*/
+        .our-services{
+            margin-top:100px;
+            background:rgba(173, 216, 230, 0.459);
+            padding:50px;
+        }
+        .our-services .section-title h1{
+            display:inline-block;
+            text-transform:uppercase;
+            font-size:35px;
+            font-weight:700;
+            color:#000000;
+            padding:0;
+            margin:0;
+            padding-bottom:5px;
+            position:relative;
+            padding-top:25px;
+        }
+        
+        .our-services .section-title h1:before{
+            content:"";
+            height:2px;
+            width:65%;
+            background-color:orange;
+            bottom:0;
+            position: absolute;
+            left:35%;
+        }
+        
+            .row-service-content{
+                align-items:center;
+            }
+
+            .our-services .service-content{
+                display:grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                grid-gap:30px;
+                text-align:center;
+                margin-top:15px;
+                padding:30px 0;
+            }
+
+
+            .our-services .service-content .box{
+                background:#ffffff;
+                border:1px solid rgba(128, 128, 128, 0.158);
+                padding:15px;
+                
+            }
+
+            .our-services .service-content .box h5{
+                font-size:16px;
+                font-weight:600;
+                margin:10px;
+            }
+
+            .our-services .service-content .box .fa{
+                background:orange;
+                height:60px;
+                width:60px;
+                line-height:60px;
+                border-radius:50%;
+                font-size: 25px;
+                font-weight:500;
+                color:white;
+                margin-top:20%;
+              
+            }
+/* End Service section*/
+/* Start skill section*/
+.skill{
+    margin-top:100px;
+}
+.skill .section-title p{
+    padding-left:25px;
+    margin-top:15px;
+}
+
+.skill .section-title h1:before{
+    content:"";
+    left:72%;
+    height:2px;
+    right:0;
+    width:28%;
+    background-color:orange;
+    bottom:0;
+    position:absolute;
+}
+.row-skills{
+    display:grid;
+    grid-template-columns: 50% 1fr;
+    grid-gap:20px;
+    align-items: center;
+    margin-top:50px;
+}
+.skill-bar{
+    width:100%;
+    background:orange;
+    border-radius:40px;
+}
+
+.skill-level{
+text-align:right;
+background:rgba(0, 0, 0, 0.452);
+padding:5px;
+color:white;
+border-radius:40px;
+padding-right:20px;
+}
+
+.skill-name h3{
+    margin-left:25px;
+    padding-top:5px;
+    color:black;
+    margin-top:25px;
+    font-size:22px;
+}
+.img-skill{
+    height:400px;
+    width:100%;
+    background-image:url('img/web.jpg');
+    background-size:cover;
+    background-position:center;
+}
+/* End skill section*/
+
+/* Start project-section*/
+.myProject{
+    margin-top: 100px;
+    padding-top:50px;
+}
+.myProject .section-title h1{
+    display:inline-block;
+    text-transform:uppercase;
+    font-size:35px;
+    font-weight:700;
+    color:#000000;
+    padding:0;
+    margin:0;
+    position:relative;
+    
+}
+
+.myProject .section-title h1:before{
+    content:"";
+    left:52%;
+    height:2px;
+    width:48%;
+    background-color:orange;
+    bottom:0;
+    position:absolute;
+    margin-bottom:-3px;
+}
+.project-tile{
+    margin-top:50px;
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap:1rem;
+    grid-auto-flow: dense;
+  
+}
+
+.btn-project{
+    width:100%;
+    border:none;
+    padding:20px;
+    background-color:#01295F;
+    position:relative;
+}
+
+.btn-link{
+position:relative;
+transform: translate(-50%, 50%);
+font-size:20px;
+text-decoration: none;
+font-family: verdana;
+text-transform: uppercase;
+background:#01295F;
+text-align:center;
+padding:8px;
+color:orange;
+}
+
+.btn-link:before,
+.btn-link:after,
+span:before,
+span:after{
+content:"";
+position:absolute;
+width: 10px;
+height: 10px;
+background:orange;
+transition:1s;
+z-index:-1;
+}
+
+.btn-link:before{
+top:-2px;
+left:-2px;
+}
+
+.btn-link:after{
+top:-2px;
+right:-2px;
+}
+
+span:before{
+bottom:-2px;
+right:-2px;
+}
+
+span:after{
+bottom:-2px;
+left:-2px;
+}
+
+.btn-link:hover:before,
+.btn-link:hover:after,
+.btn-link:hover span:before,
+.btn-link:hover span:after{
+width: calc(130px/2);
+height: calc(30px/2);
+}
+
+  .preview-pic-1{
+    min-height:400px;
+    background-image:url('img/psd-web-template-alamgir-1.jpg');
+    background-size:cover;
+    background-position:top;
+    transition: ease-in-out 8s;
+}
+
+.preview-pic-2{
+    min-height:400px;
+    background-image:url('img/interiar-business-web-template.jpg');
+    background-size:cover;
+    background-position:top;
+    transition: ease-in-out 8s;
+}
+
+.preview-pic-3{
+    min-height:400px;
+    background-image:url('img/Portfolio-web-template.jpg');
+    background-size:cover;
+    background-position:top;
+    transition: ease-in-out 8s;
+}
+
+.preview-pic-4{
+    min-height:400px;
+    background-image:url('img/Law-web-template.jpg');
+    background-size:cover;
+    background-position:top;
+    transition: ease-in-out 8s;
+}
+
+.preview-pic-5{
+    min-height:400px;
+    background-image:url('img/psd-web-template-alamgir-2.jpg');
+    background-size:cover;
+    background-position:top;
+    transition: ease-in-out 8s;
+}
+
+.preview-pic-6{
+    min-height:400px;
+    background-image:url('img/psd-web-template-alamgir-3.jpg');
+    background-size:cover;
+    background-position:top;
+    transition: ease-in-out 8s;
+}
+
+.preview-pic-7{
+    min-height:400px;
+    background-image:url('img/Diabetic-web-template-02.jpg');
+    background-size:cover;
+    background-position:top;
+    transition: ease-in-out 8s;
+}
+
+.preview-pic-8{
+    min-height:400px;
+    background-image:url('img/Diabetic-web-template-about-us.jpg');
+    background-size:cover;
+    background-position:top;
+    transition: ease-in-out 8s;
+}
+
+.preview-pic-9{
+    min-height:400px;
+    background-image:url('img/Diabetic-web-template.jpg');
+    background-size:cover;
+    background-position:top;
+    transition: ease-in-out 8s;
+}
+.box:hover{
+    background-position:bottom;
+}
+/* Start contact-section*/
+.contact-section{
+    margin-top:100px;
+    background:rgba(173, 216, 230, 0.459);
+    padding-bottom: 100px;
+}
+
+.text-center{
+    text-align: center!important;
+}
+
+.contact-section .section-title h1{
+margin-top:50px;
+}
+
+.contact-section .section-title h1:before{
+    left:55%;
+    width:45%;
+}
+
+.contact-section .contact-form{
+    background:#eeeeee;
+    flex:0 0 100%;
+    max-width:100%;
+    padding:40px;
+    border:1px solid gray;
+    border-radius:4px;
+    margin-top:25px;
+}
+
+.contact-section .contact-form .text{
+    flex:0 0 100%;
+    max-width:100%;
+    padding-bottom:20px;
+}
+
+.contact-section .contact-form .text h2{
+    font-size:25px;
+    font-weight:600;
+    margin:0;
+    bottom:0;
+}
+.contact-section .contact-form .text p{
+    font-size:15px;
+    font-weight: 400;
+    color:gray;
+    margin:0;
+    line-height: 24px;
+}
+.contact-section .contact-form .space-between{
+    justify-content: space-between;
+}
+.contact-section .contact-form .col-6{
+flex:0 0 calc(50% - 15px);
+max-width:calc(50% - 15px);
+}
+.contact-section .contact-form .col-12{
+    flex:0 0 100%;
+    max-width:100%;
+    }
+.contact-section .contact-form .form-control{
+    height:45px;
+    width:100%;
+    margin-bottom:15px;
+    border: 1px solid gray;
+    padding: 6px 12px;
+    border-radius:4px;
+    font-size:14px;
+}
+.contact-section .contact-form textarea.form-control{
+height:140px;
+padding-top:10px;
+}
+.contact-section .contact-form .form-control::placeholder{
+    color:gray;
+}
+.contact-section .contact-form .submit-btn a{
+    text-decoration:none;
+    color:black;
+    border-radius: 4px;
+    border:1px solid gray;
+    padding:12px 25px;
+    font-size:14px;
+    font-weight: 600;
+    display:inline-block;
+    transition: all .5s ease;
+    background-color:orange;
+    text-transform: uppercase;
+    }
+    
+    .contact-section .contact-form .submit-btn a:hover{
+        background:#01295F;
+        color:white;
+        
+    }
+/* End contact-section*/
+/*Start footer*/
+footer{
+    padding-top:50px;
+    background:rgb(34, 39, 41);
+}
+footer .logo{
+    flex: 0 0 100%;
+    max-width:100%;
+    color:white;
+    text-align:center;
+    font-weight:400;
+    font-size:45px;
+    letter-spacing: 10px;
+}
+
+footer .social-link {
+    flex:0 0 100%;
+    max-width:100%;
+    text-align:center;
+    padding-top:10px;
+    
+}
+
+
+footer .social-link a{
+color:#999999;
+text-decoration: none;
+margin: 0 12px;
+transition: all .5s ease;
+display: inline-block;
+}
+
+footer .social-link a:hover{
+color: #ffffff;
+}
+.copywrite{
+   margin-top:50px;
+   margin-bottom:0;
+   height:50px;
+   font-weight:400;
+   font-size:14px;
+   text-align:center;
+   border-top:1px solid #999999;
+   color:white;
+   display:flex;
+   align-items: center;
+   justify-content: center;
+}
+/*End footer*/
+
+/*responsive code start*/
+@media only screen and (max-width:991px){
+    .nav label{
+    display:block;
+    cursor:pointer;
+    
+    }
+    .menu{
+        text-align: center;
+        width:100%;
+        display:none;
+    }
+    
+    .menu a{
+       display:block;
+        border-bottom:1px solid gray;
+        margin:0;
+        position:relative;
+        background:rgb(34, 39, 41);
+
+    }
+    #toggle:checked + .menu{
+    display: block;
+    }
+    .home .home-content .block h1{
+        font-size: 55px;
+    }
+}
+
+@media only screen and (max-width:767px){
+    .home .home-content .block h1{
+        font-size: 40px;
+    }
+    .home .home-content .block h3{
+        font-size: 20px;
+    }
+    .home .home-content .block .btn-know a{
+        padding:12px 25px;
+    }
+    .about-me .about-content .about-me-text{
+flex:0 0 100%;
+    max-width:100%;
+    padding:25px;
+
+    }
+    .project-tile{
+    margin-top:50px;
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(49.2%, 1fr));
+    grid-gap:1rem;
+    grid-auto-flow: dense;
+  
+}
+}
+
+@media only screen and (max-width:500px){
+    .home .home-content .block h1{
+        font-size: 30px;
+    }
+    .home .home-content .block h3{
+        font-size: 20px;
+    }
+    .home .home-content .block .btn-know a{
+        padding:12px 25px;
+    }
+   .about-me .about-content .img-about-me img{
+    flex:0 0 100%;
+    max-width:100%;
+}
+ 
+.our-services .service-content .box{
+    
+    flex:0 0 100%;
+    max-width: 100%;
+    padding:30px;
+    }
+    .row-skills{
+    display:grid;
+    grid-template-columns:100%;
+    grid-gap:20px;
+    align-items: center;
+    margin-top:50px;
+}
+    .contact-section .contact-form .col-6{
+flex:0 0 100%;
+max-width:100%;
+}
+    .img-skill{
+    height:600px;
+    width:100%;
+    background-image:url('img/web.jpg');
+    background-size:cover;
+    background-position:center;
+    margin:50px 0;
+    }
+    
+    .project-tile{
+    margin-top:50px;
+    display:grid;
+    grid-template-columns:100%;
+    grid-gap:1rem;
+    grid-auto-flow: dense;
+    }
+}
